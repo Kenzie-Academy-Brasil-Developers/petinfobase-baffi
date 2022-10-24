@@ -1,0 +1,75 @@
+p {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+h2{
+    font-size: 20px;
+}
+
+h1{
+    font-size: 32px;
+    font-weight: 600;
+}
+
+h3{
+    font-size: 32px;
+    color: var(--brand100);
+    font-weight: 600;
+}
+.p-descrition{
+    color: var(--gray300);
+    font-weight: 400;
+}
+
+/* ******login******* */
+
+.p-info-pet-login{
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.p-info-pet-login > span{
+    color: var(--brand100);
+}
+
+.span-info{
+    color: var(--gray300);
+}
+
+.feed{
+    font-size: 20px;
+    color: var(--gray100);
+    font-weight: 500;
+}
+
+/* ******home**** */
+
+.span-acessar{
+    color: var(--brand100);
+    font-weight: 600;
+}
+
+.span-publication{
+    color: var(--gray300);
+    line-height: 24px;
+}
+
+.h2-feed{
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.h3-login{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--gray100);
+}
+
+.errPass{  
+    color: var(--alert100);
+}
+
+#msgErr{
+    color: transparent;
+}

@@ -1,0 +1,24 @@
+.div-all-imgs{
+    display: flex;
+    gap: 20px;
+}
+
+.div-margin-img{
+    margin: 7px;
+
+}
+
+
+
+/* ****login***** */
+
+.div-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div-img-main{
+    width: 208px;
+}
+

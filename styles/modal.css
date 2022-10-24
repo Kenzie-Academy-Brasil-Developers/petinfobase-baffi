@@ -1,0 +1,97 @@
+/* *************modalcheck******************** */
+
+
+.div-check{
+    display: flex;
+    gap: 13px;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.img-check{
+    background-color: var(--sucess100);
+    border-radius: 50px;
+    width: 24px;
+    height: 24px;
+}
+
+.p-div-check{
+    color: var(--sucess100);
+}
+
+a{
+    color: var(--brand100);
+}
+
+.modal-check {
+    margin: 0 auto;
+    width: 360px;
+    left: 17px;
+    background-color: var(--gray800);
+    position: fixed;
+    top: 560px;
+    display: flex;
+    flex-direction: column;
+    display: none;
+    
+  }
+
+/* 
+  ************modalPost**************** */ 
+   .modalMain {
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(33, 37, 41, 0.5);
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modal {
+    background-color: var(--gray800);
+    width: 85%;
+    height: 300px;
+    margin-top: 115px;
+    position: absolute;
+    top: 0;
+  }
+  
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    margin: 8px;
+  }
+
+  .show-modal {
+    animation: modalAnimation 1.2s ease;
+} 
+
+
+ .card{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    font-size: 10px;
+
+}
+
+
+@keyframes modalAnimation {
+    0%{
+     
+        transform: translateY(-50%);
+        
+    }
+    100%{
+       
+        transform: translateY(0);
+        
+    }
+}
+
+
