@@ -60,3 +60,12 @@ main{
     gap: 30px;
 }
 
+@media (min-width: 768px) {
+main{
+    flex-direction: row;
+    height: none;
+}
+.section-anime{
+    margin-top: 200px;
+}
+}
