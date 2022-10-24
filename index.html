@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Petinfo - Login</title>
+    <link rel="stylesheet" href="./styles/globalStyles.css" />
+    <link rel="stylesheet" href="./styles/button.css" />
+    <link rel="stylesheet" href="./styles/img.css" />
+    <link rel="stylesheet" href="./styles/input.css" />
+    <link rel="stylesheet" href="./styles/login.css" />
+    <link rel="stylesheet" href="./styles/title.css" />
+  </head>
+  <body>
+    <main class="main-login">
+      <section class="section-login">
+        <div class="div-login-anime">
+          <h1>Petinfo</h1>
+          <p class="p-info-pet-login">
+            <span>Amor</span> e <span>carinho</span> por meio do conhecimento
+          </p>
+          <span class="span-info"
+            >Todas as informações para melhorar a vida do seu pet em um só
+            lugar</span
+          >
+          <div class="div-img">
+            <div class="div-img-main">
+              <img src="./assets/Rectangle 2 login.svg" alt="" />
+              <img src="./assets/Rectangle 3 login.svg" alt="" />
+              <img src="./assets/Rectangle 4 login.svg" alt="" />
+            </div>
+            <img src="./assets/Rectangle 5 login.svg" alt="" />
+          </div>
+        </div>
+      </section>
+      <section class="section-login">
+        <div>
+          <form action="" class="form-login">
+            <h3 class="h3-login">Login</h3>
+            <label for="email">Email</label>
+            <input
+              id="email"
+              autocomplete="username"
+              type="email"
+              placeholder="Digite seu email"
+              required
+            />
+            <label for="password">senha</label>
+            <input
+              class="myPassword "
+              id="password"
+              autocomplete="current-password"
+              type="password"
+              placeholder="Digite sua senha"
+              required
+            />
+            <!-- <p id="msgErr" class="errPass">A senha está incorreta</p> -->
+
+            <button type="submit" class="button-blue">Acessar</button>
+            <div class="div-form">
+              <p>Ainda nao possui conta?</p>
+              <span
+                >Clicando no botão abaixo, você pode se cadastrar
+                rapidamente</span
+              >
+              <a
+                href="./pages/registration/register.html"
+                type="submit"
+                id="password"
+                class="button-login-cadastrar"
+                >Cadastrar</a
+              >
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="./scripts/login.js"></script>
+    
+  </body>
+</html>

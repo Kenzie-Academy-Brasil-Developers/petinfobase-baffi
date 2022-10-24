@@ -1,0 +1,14 @@
+/* ************input pagina de cadastro*************** */
+input{
+    height: 35px;
+    border-radius: 4px;
+    border: 1px solid var( --gray600);
+    background-color: var(--gray800);
+    padding: 10px;
+    margin-bottom: 10px;
+
+}
+
+.msgErr{
+    border: 1px solid var(--alert100);
+}
