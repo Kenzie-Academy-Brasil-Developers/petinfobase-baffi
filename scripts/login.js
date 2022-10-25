@@ -19,7 +19,7 @@ const eventLogin = () => {
        await login(body)
     })
 
-    console.log(elements);
+    
 }
 eventLogin()
 
@@ -36,8 +36,8 @@ eventLogin()
 
 // ************spinner**********
 
-// function search() {
-//     const button = document.querySelector('.button-blue')
+//  function search() {
+//     const button = document.querySelector('.spinner')
 //     console.log(button);
 
 //     button.addEventListener('click', () => {
@@ -50,14 +50,14 @@ eventLogin()
 
 //         button.appendChild(img)
 
-//         getGit(button)
+//          postPet(button)
 
 //     })
 // }
 
-// const getGit = (button) => {
+//  const postPet = (button) => {
 
-//     const git = fetch('http://localhost:3333/', {
+//     const git =  fetch('http://localhost:3333', {
 //         method: 'POST',
 //         headers: {
 //             "content-type": 'aplication/json'
@@ -65,6 +65,7 @@ eventLogin()
 //     })
 //         .then(res => res.json)
 //         .then(res => {
+//             console.log(res);
 //             button.innerHTML = ''
 //             button.innerText = 'Acessar'
 
