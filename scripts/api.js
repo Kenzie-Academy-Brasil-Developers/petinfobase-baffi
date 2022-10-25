@@ -1,6 +1,6 @@
 /* Desenvolva seu código aqui */
 import {getLocalStorage} from './localStorage.js'
-import { toast, toastErr } from './toast.js';
+import { toast } from './toast.js';
 
 
 
