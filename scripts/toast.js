@@ -13,7 +13,7 @@ export const toast = ( ) => {
     modalCheck.classList.add("modal-check")
     divCheck.classList.add("div-check")
     img.classList.add('img-check')
-    // img.src = '../../assets/check.svg'
+    img.src = '../../assets/check.svg'
     pdiv.classList.add('p-div-check')
     pdiv.innerText = 'Agora você pode acessar os conteúdos utilizando seu usuário e senha na página de login:'
     a.innerText = 'Acessar página de login'
