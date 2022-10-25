@@ -26,7 +26,7 @@ async function login(body) {
             localStorage.setItem("user", JSON.stringify(response.token));
 
             setTimeout(() => {
-                window.location.assign("/petinfobase-baffi/pages/home/index.html")
+                window.location.assign("/pages/home/index.html")
 
             }, 4000)
 
