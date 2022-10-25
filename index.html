@@ -29,7 +29,7 @@
               <img src="./assets/Rectangle 2 login.svg" alt="" />
               <img src="./assets/Rectangle 3 login.svg" alt="" />
               <img src="./assets/Rectangle 4 login.svg" alt="" />
-            </div>          
+            </div>
             <img src="./assets/Rectangle 5 login.svg" alt="" />
           </div>
         </div>
@@ -49,7 +49,7 @@
             />
             <label for="password">senha</label>
             <input
-            class="inputErro"
+              class="inputErro"
               id="password"
               autocomplete="current-password"
               type="password"
@@ -58,7 +58,13 @@
             />
             <p id="msgErr" class="errPass hidden">Senha ou email incorretos</p>
 
-            <button type="submit" class="button-blue spinner">Acessar</button>
+            <button
+              type="submit"
+              class="button-blue spinner buttonValid"
+              disabled="disabled"
+            >
+              Acessar
+            </button>
             <div class="div-form">
               <p>Ainda nao possui conta?</p>
               <span
@@ -78,6 +84,5 @@
       </section>
     </main>
     <script type="module" src="./scripts/login.js"></script>
-    
   </body>
 </html>

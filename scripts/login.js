@@ -15,7 +15,7 @@ const eventLogin = () => {
                 body[elm.id] = elm.value
             }
         })
-        search()
+        
        await login(body)
     })
 
@@ -24,54 +24,73 @@ const eventLogin = () => {
 eventLogin()
 
 
-
-
-
-
-
-
-
-
-
-
 // ************spinner**********
 
- function search() {
-    const button = document.querySelector('.spinner')
-    console.log(button);
+//  function search() {
+//     const button = document.querySelector('.spinner')
+//     console.log(button);
 
     
-        button.innerHTML = ''
+//         button.innerHTML = ''
 
-        const img = document.createElement('img')
-        img.src = '/petinfobase-baffi/assets/spinner.png'
-        img.alt = 'spinner'
-        img.classList.add('loading');
+//         const img = document.createElement('img')
+//         img.src = './petinfobase-baffi/assets/spinner.png'
+//         img.alt = 'spinner'
+//         img.classList.add('loading');
 
-        button.appendChild(img)
+//         button.appendChild(img)
 
-         postPet(button)
+//          postPet(button)
 
     
-}
+// }
 
- const postPet  = (button) => {
+//  const postPet  = (button) => {
 
-    const git =   fetch('http://localhost:3333/login', {
-        method: 'POST',
-        headers: {
-            "content-type": 'aplication/json'
-        }
-    })
-        .then(res => res.json)
-        .then(res => {
-            console.log(res);
-            button.innerHTML = ''
-            button.innerText = 'Acessar'
+//     const git =   fetch('http://localhost:3333/login', {
+//         method: 'POST',
+//         headers: {
+//             "content-type": 'aplication/json'
+//         }
+//     })
+//         .then(res => res.json)
+//         .then(res => {
+//             console.log(res);
+//             button.innerHTML = ''
+//             button.innerText = 'Acessar'
 
           
-        })
-    return git
-}
+//         })
+//     return git
+// }
 
-search()
+// search()
+
+// ********validacao botao login************
+
+function checkInputs(inputs) {
+    var filled = true;
+    
+    inputs.forEach(function(input) {
+        
+      if(input.value === "") {
+          filled = false;
+      }
+    
+    });
+    
+    return filled;
+    
+  }
+  var inputs = document.querySelectorAll("input");
+  var button = document.querySelector(".buttonValid");
+  inputs.forEach(function(input) {
+      
+    input.addEventListener("keyup", function() {
+      if(checkInputs(inputs)) {
+        button.disabled = false;
+      } else {
+        button.disabled = true;
+      }
+    });
+  });

@@ -26,7 +26,7 @@ async function login(body) {
             localStorage.setItem("user", JSON.stringify(response.token));
 
             setTimeout(() => {
-                window.location.assign("/petinfobase-baffi/pages/home/index.html")
+                window.location.assign("pages/home/index.html")
 
             }, 4000)
 
@@ -55,7 +55,7 @@ async function login(body) {
 async function register(body) {
 
     try {
-        const request = await fetch(baseUrl + 'users' + '/' + 'create', {
+        const request = await fetch(`${baseUrl }users/create`, {
             method: "POST",
             headers: {
                 "Content-type": "application/json",
