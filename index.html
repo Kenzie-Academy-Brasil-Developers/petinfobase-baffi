@@ -40,6 +40,7 @@
             <h3 class="h3-login">Login</h3>
             <label for="email">Email</label>
             <input
+              class="inputErro"
               id="email"
               autocomplete="username"
               type="email"
@@ -48,16 +49,16 @@
             />
             <label for="password">senha</label>
             <input
-              class="myPassword "
+            class="inputErro"
               id="password"
               autocomplete="current-password"
               type="password"
               placeholder="Digite sua senha"
               required
             />
-            <!-- <p id="msgErr" class="errPass">A senha está incorreta</p> -->
+            <p id="msgErr" class="errPass hidden">Senha ou email incorretos</p>
 
-            <button type="submit" class="button-blue">Acessar</button>
+            <button type="submit" class="button-blue spinner">Acessar</button>
             <div class="div-form">
               <p>Ainda nao possui conta?</p>
               <span

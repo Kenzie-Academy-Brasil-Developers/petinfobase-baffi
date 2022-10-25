@@ -9,6 +9,6 @@ input{
 
 }
 
-.msgErr{
+.inputRed{
     border: 1px solid var(--alert100);
 }

@@ -68,8 +68,17 @@ h3{
 
 .errPass{  
     color: var(--alert100);
+    font-size: 14px;
+   
 }
 
-#msgErr{
-    color: transparent;
+.hidden {
+    display: none;
+}
+/* 
+***********register********** */
+
+.msgErroRegister{
+    font-size: 12px;
+    color: var(--alert100);
 }
