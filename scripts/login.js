@@ -9,13 +9,13 @@ const eventLogin = () => {
         e.preventDefault()
 
         const body = {}
-
+            
         elements.forEach((elm) => {
             if (elm.tagName === 'INPUT' && elm.value !== '') {
                 body[elm.id] = elm.value
             }
         })
-
+        search()
        await login(body)
     })
 
@@ -36,42 +36,42 @@ eventLogin()
 
 // ************spinner**********
 
-//  function search() {
-//     const button = document.querySelector('.spinner')
-//     console.log(button);
+ function search() {
+    const button = document.querySelector('.spinner')
+    console.log(button);
 
-//     button.addEventListener('click', () => {
-//         button.innerHTML = ''
+    
+        button.innerHTML = ''
 
-//         const img = document.createElement('img')
-//         img.src = '../assets/spinner.png'
-//         img.alt = 'spinner'
-//         img.classList.add('loading');
+        const img = document.createElement('img')
+        img.src = '/petinfobase-baffi/assets/spinner.png'
+        img.alt = 'spinner'
+        img.classList.add('loading');
 
-//         button.appendChild(img)
+        button.appendChild(img)
 
-//          postPet(button)
+         postPet(button)
 
-//     })
-// }
+    
+}
 
-//  const postPet = (button) => {
+ const postPet  = (button) => {
 
-//     const git =  fetch('http://localhost:3333', {
-//         method: 'POST',
-//         headers: {
-//             "content-type": 'aplication/json'
-//         }
-//     })
-//         .then(res => res.json)
-//         .then(res => {
-//             console.log(res);
-//             button.innerHTML = ''
-//             button.innerText = 'Acessar'
+    const git =   fetch('http://localhost:3333/login', {
+        method: 'POST',
+        headers: {
+            "content-type": 'aplication/json'
+        }
+    })
+        .then(res => res.json)
+        .then(res => {
+            console.log(res);
+            button.innerHTML = ''
+            button.innerText = 'Acessar'
 
           
-//         })
-//     return git
-// }
+        })
+    return git
+}
 
-// search()
+search()

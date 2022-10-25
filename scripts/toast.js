@@ -27,15 +27,7 @@ export const toast = ( ) => {
 
 }
 
-export const toastErr = () => {
 
-const input = document.getElementById('password')
-const p = document.createElement('p')
-p.classList.add('msgErroRegister')
-p.innerText = 'Informaçoes invalidas'
-
-input.append(p)
-}
 
 
 

@@ -1,6 +1,6 @@
 /* Desenvolva seu código aqui */
-import {getLocalStorage} from './localStorage.js'
-import { toast, toastErr } from './toast.js';
+import { getLocalStorage } from './localStorage.js'
+import { toast } from './toast.js';
 
 
 
@@ -10,7 +10,7 @@ const baseUrl = 'http://localhost:3333/'
 async function login(body) {
 
     try {
-        const request = await fetch(baseUrl + "login", {
+        const request = await fetch(`${baseUrl}login` , {
 
             method: "POST",
             headers: {
@@ -21,28 +21,29 @@ async function login(body) {
         })
         const response = await request.json();
 
-        if (request.ok) {                    
+        if (request.ok) {
 
-            localStorage.setItem("user", JSON.stringify(response));
+            localStorage.setItem("user", JSON.stringify(response.token));
 
             setTimeout(() => {
-                window.location.assign("../pages/home/index.html")
+                window.location.assign("/petinfobase-baffi/pages/home/index.html")
 
             }, 4000)
 
         } else if (response.message) {
-            let input = document.querySelectorAll('.inputErro')
-            let p = document.getElementById('msgErr')
-            p.classList.remove('hidden')
-
-            input.forEach((elm) => {
+          
+                let input = document.querySelectorAll('.inputErro')
+                let p = document.getElementById('msgErr')
+                p.classList.remove('hidden')
+                input.forEach((elm) => {
                 elm.classList.add('inputRed')
-
-            })
+    
+                })
+            
         }
 
-
     } catch (err) {
+        
         console.log(err);
 
     }
@@ -62,7 +63,7 @@ async function register(body) {
             },
             body: JSON.stringify(body)
         })
-        
+
         if (request.ok === true) {
             toast()
             setTimeout(() => {
