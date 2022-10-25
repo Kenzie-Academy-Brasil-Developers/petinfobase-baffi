@@ -52,7 +52,7 @@ a{
 }
 
 .loading{
-    animation: spinner 1s infinite linear;
+    animation: spinner 4s infinite linear;
 }
 
 @keyframes spinner {

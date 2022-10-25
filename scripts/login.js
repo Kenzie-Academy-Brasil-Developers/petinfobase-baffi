@@ -9,13 +9,13 @@ const eventLogin = () => {
         e.preventDefault()
 
         const body = {}
-
+            
         elements.forEach((elm) => {
             if (elm.tagName === 'INPUT' && elm.value !== '') {
                 body[elm.id] = elm.value
             }
         })
-
+        search()
        await login(body)
     })
 
@@ -40,11 +40,11 @@ eventLogin()
     const button = document.querySelector('.spinner')
     console.log(button);
 
-    button.addEventListener('click', () => {
+    
         button.innerHTML = ''
 
         const img = document.createElement('img')
-        img.src = '../assets/spinner.png'
+        img.src = '/petinfobase-baffi/assets/spinner.png'
         img.alt = 'spinner'
         img.classList.add('loading');
 
@@ -52,12 +52,12 @@ eventLogin()
 
          postPet(button)
 
-    })
+    
 }
 
- const postPet = (button) => {
+ const postPet  = (button) => {
 
-    const git =  fetch('http://localhost:3333/login', {
+    const git =   fetch('http://localhost:3333/login', {
         method: 'POST',
         headers: {
             "content-type": 'aplication/json'
